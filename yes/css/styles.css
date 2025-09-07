@@ -1,0 +1,331 @@
+/* Base (mobile-first) */
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    background-image: url("../img/fondo_gta5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+#logogta5 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999999;
+}
+
+.carousel-inner {
+    overflow: visible !important;
+}
+
+.carousel-item {
+    margin: 2px;
+}
+
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor2 {
+    align-self: center;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(136, 136, 136, 0.712), rgba(195, 194, 194, 0));
+    border-radius: 15px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 200px;
+}
+
+.name {
+    margin-top: 180px;
+    text-align: center;
+    color: white;
+}
+
+.parrafo {
+    margin: 5px;
+    color: white;
+    text-align: justify;
+}
+
+
+#imagen_franklin,
+#imagen_michael,
+#imagen_trevor {
+    align-self: center;
+    margin-top: 10px;
+    position: absolute;
+}
+
+
+
+/* <576px */
+@media (max-width: 575.98px) {
+    #logogta5 {
+        width: 100px;
+    }
+
+    .contenedor2 {
+        width: 300px;
+    }
+
+    .parrafo {
+        font-size: 15px;
+    }
+
+    .parrafo_width {
+        width: 200px;
+    }
+
+    #imagen_franklin {
+        width: 150px;
+        top: -80px;
+    }
+
+    #imagen_michael {
+        width: 180px;
+        top: -80px;
+    }
+
+    #imagen_trevor {
+        width: 180px;
+        top: -80px;
+    }
+}
+
+/* 576–767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #logogta5 {
+        width: 140px;
+    }
+
+    .carousel {
+        overflow: visible !important;
+        margin-top: 20px;
+    }
+
+    .contenedor2 {
+        width: 400px;
+    }
+
+    .parrafo {
+        font-size: 15px;
+    }
+
+    .parrafo_width {
+        width: 300px;
+    }
+
+    #imagen_franklin {
+        width: 150px;
+        top: -80px;
+    }
+
+    #imagen_michael {
+        width: 180px;
+        top: -80px;
+    }
+
+    #imagen_trevor {
+        width: 180px;
+        top: -80px;
+    }
+}
+
+/* 768–991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #logogta5 {
+        width: 190px;
+    }
+
+    .contenedor2 {
+        width: 600px;
+    }
+
+    .parrafo {
+        font-size: 20px;
+    }
+
+    .parrafo_width {
+        width: 400px;
+    }
+
+    #imagen_franklin {
+        width: 200px;
+        top: -165px;
+    }
+
+    #imagen_michael {
+        width: 230px;
+        top: -165px;
+    }
+
+    #imagen_trevor {
+        width: 240px;
+        top: -165px;
+    }
+}
+
+/* 992–1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #logogta5 {
+        width: 190px;
+    }
+
+    .carousel {
+        overflow: visible !important;
+        margin-top: 20px;
+    }
+
+    .contenedor2 {
+        width: 700px;
+    }
+
+    .parrafo {
+        font-size: 20px;
+    }
+
+    .parrafo_width {
+        width: 500px;
+    }
+
+    #imagen_franklin {
+        width: 200px;
+        top: -165px;
+    }
+
+    #imagen_michael {
+        width: 230px;
+        top: -165px;
+    }
+
+    #imagen_trevor {
+        width: 240px;
+        top: -165px;
+    }
+}
+
+/* 1200–1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #logogta5 {
+        width: 190px;
+    }
+
+    .carousel {
+        overflow: visible !important;
+        margin-top: 20px;
+    }
+
+    .contenedor2 {
+        width: 600px;
+    }
+
+
+
+    .parrafo {
+        font-size: 20px;
+    }
+
+    .parrafo_width {
+        width: 500px;
+    }
+
+    #imagen_franklin {
+        width: 200px;
+        top: -165px;
+    }
+
+    #imagen_michael {
+        width: 230px;
+        top: -165px;
+    }
+
+    #imagen_trevor {
+        width: 240px;
+        top: -165px;
+    }
+}
+
+/* ≥1400px */
+@media (min-width: 1400px) {
+    #logogta5 {
+        width: 190px;
+    }
+
+    .carousel {
+        overflow: visible !important;
+        margin-top: 20px;
+    }
+
+    .contenedor2 {
+        width: 900px;
+    }
+
+    .name {
+        font-size: 70px;
+    }
+
+    .parrafo {
+        font-size: 25px;
+    }
+
+    .parrafo_width {
+        width: 500px;
+    }
+
+    #imagen_franklin {
+        width: 200px;
+        top: -165px;
+    }
+
+    #imagen_michael {
+        width: 230px;
+        top: -165px;
+    }
+
+    #imagen_trevor {
+        width: 240px;
+        top: -165px;
+    }
+}
+
+@media (max-height: 792px) {
+    #imagen_franklin {
+        width: 140px;
+        top: -60px
+    }
+
+    #imagen_michael {
+        width: 170px;
+        top: -60px;
+    }
+
+    #imagen_trevor {
+        width: 180px;
+        top: -60px;
+    }
+}
